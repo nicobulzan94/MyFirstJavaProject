@@ -42,7 +42,7 @@ public class Main {
         int z = division(x, y);
         System.out.println(z);
 
-        float a = multiplication(x, y);
+        int a = multiplication(x, y);
         System.out.println(a);
 
     }
@@ -53,11 +53,8 @@ public class Main {
         return result1;
     }
 
-    public static float multiplication(float first, float second){
-        float result2 = first * second;
+    public static int multiplication(int first, int second){
+        int result2 = first * second;
         return result2;
-
-
-
     }
 }
