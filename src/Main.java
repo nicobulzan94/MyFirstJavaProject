@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+
         //1. Printati "Hello" in consola, iar pe rand nou, printati numele vostru.
 
         String start = "Hello\n" + "Nico";
@@ -31,10 +33,28 @@ public class Main {
 
         System.out.println(a + " " + b + " " + c + " " + d);
 
+*/
+        int x = 10;
+        int y = 2;
 
 
+        int z = division(x, y);
+        System.out.println(z);
+
+        float a = multiplication(x, y);
+        System.out.println(a);
+
+    }
 
 
+    public static int division(int first, int second) {
+        int result1 = first / second;
+        return result1;
+    }
+
+    public static float multiplication(float first, float second){
+        float result2 = first * second;
+        return result2;
 
 
 
