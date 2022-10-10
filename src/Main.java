@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
+     /*
 
         //1. Printati "Hello" in consola, iar pe rand nou, printati numele vostru.
 
@@ -33,7 +33,8 @@ public class Main {
 
         System.out.println(a + " " + b + " " + c + " " + d);
 
-*/
+     */
+
         int x = 10;
         int y = 2;
 
