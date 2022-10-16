@@ -47,6 +47,7 @@ public class Main {
         int a = multiplication(x, y);
         System.out.println(a);
  */
+        // Tema Lab10
         System.out.println("Tema lab10");
         System.out.println();
 
