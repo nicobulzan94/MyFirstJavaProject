@@ -160,6 +160,28 @@ public class Main {
         //11.Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
         System.out.println(op.returnBiggestNr(2,3,4));
         System.out.println();
+        System.out.println();
+
+
+        //Tema Lab12: for loop
+        System.out.println("Tema Lab12: Java For Loops");
+
+        System.out.println("Exercitiul 1");
+        op.fromNrto100(96);
+        System.out.println();
+
+        System.out.println("Exercitiul 2");
+        op.fromNrtoNegative100(-95);
+        System.out.println();
+
+        System.out.println("Exercitiul 3");
+        op.nrBetweenXandY(11, 16);
+        System.out.println();
+
+        System.out.println("Exercitiul 4");
+        op.nrFromXtoY(15,10);
+        System.out.println();
+
 
 
 

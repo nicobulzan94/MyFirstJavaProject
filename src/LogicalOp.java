@@ -118,6 +118,44 @@ public class LogicalOp {
     }
 
 
+    // Tema Lab12: for loops
+    // Metoda pt ex 1
+    public void fromNrto100 (int nr){
+        for(int i = nr; i <= 100; i++){
+            System.out.println(i);
+        }
+    }
+
+    // Metoda pt ex 2
+    public void fromNrtoNegative100 (int negnr) {
+        for(int i = negnr; i >= -100; i--){
+            System.out.println(i);
+        }
+    }
+
+    // Metoda pt ex 3
+    public void nrBetweenXandY(int x, int y){
+        for (int i = x; i < y; i++){
+            System.out.println(i);
+            }
+        }
+
+    // Metoda pt ex 4
+    public void nrFromXtoY(int x, int y){
+        if(x < y){
+            for(int i = x; i < y; i++){
+                System.out.println(i);
+            }
+        } else {
+            for(int i = y; i < x; i++){
+                System.out.println(i);
+            }
+        }
+
+    }
+
+
+
 
 
 
