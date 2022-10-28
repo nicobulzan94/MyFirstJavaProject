@@ -153,6 +153,60 @@ public class LogicalOp {
         }
 
     }
+    // Metoda pt ex 5
+    public void evenNrFrom1to100(int number){
+        for(int i = 1; i<= number; i++){
+            if(i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    // Metoda pt ex 6
+    public void notEvenNrFrom1to100(int number){
+        for(int i = 1; i<= number; i++){
+            if(i % 2 != 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    // Metoda pt ex 7
+    public int sumUntil100(int nr){
+        int sum = 0;
+        for(int i = 0; i <= 100; i++){
+            sum = nr + i;//sau sum += i;
+        }
+        return sum;
+
+    }
+
+    // Metoda pt ex 8
+    public float sumandAverge(int nr){
+        int sum = 0;
+        for(int i = 0; i <= 100; i++){
+            sum = nr + i;
+
+        }
+        return sum/100f;
+    }
+
+    // Metoda pt ex 9
+    public void design() {
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 7; j >= 1; j--) {
+                if (j >= i) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+
 
 
 

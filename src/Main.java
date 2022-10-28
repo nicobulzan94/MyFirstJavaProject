@@ -182,6 +182,27 @@ public class Main {
         op.nrFromXtoY(15,10);
         System.out.println();
 
+        System.out.println("Exercitiul 5");
+        op.evenNrFrom1to100(100);
+        System.out.println();
+
+        System.out.println("Exercitiul 6");
+        op.notEvenNrFrom1to100(100);
+        System.out.println();
+
+        System.out.println("Exercitiul 7");
+        System.out.println(op.sumUntil100(23));
+        System.out.println();
+
+        System.out.println("Exercitiul 8");
+        System.out.println(op.sumandAverge(69));
+        System.out.println();
+
+        System.out.println("Exercitiul 9");
+        op.design();
+        System.out.println();
+
+
 
 
 
