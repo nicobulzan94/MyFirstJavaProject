@@ -167,40 +167,77 @@ public class Main {
         System.out.println("Tema Lab12: Java For Loops");
 
         System.out.println("Exercitiul 1");
-        op.fromNrto100(96);
+        op.forLoopFromNrto100(96);
         System.out.println();
 
         System.out.println("Exercitiul 2");
-        op.fromNrtoNegative100(-95);
+        op.forLoopFromNrtoNegative100(-95);
         System.out.println();
 
         System.out.println("Exercitiul 3");
-        op.nrBetweenXandY(11, 16);
+        op.forLoopNrBetweenXandY(11, 16);
         System.out.println();
 
         System.out.println("Exercitiul 4");
-        op.nrFromXtoY(15,10);
+        op.forLoopNrFromXtoY(15,10);
         System.out.println();
 
         System.out.println("Exercitiul 5");
-        op.evenNrFrom1to100(100);
+        op.forLoopEvenNrFrom1to100();
         System.out.println();
 
         System.out.println("Exercitiul 6");
-        op.notEvenNrFrom1to100(100);
+        op.forLoopNotEvenNrFrom1to100();
         System.out.println();
 
         System.out.println("Exercitiul 7");
-        System.out.println(op.sumUntil100(23));
+        System.out.println(op.forLoopSumUntil100(23));
         System.out.println();
 
         System.out.println("Exercitiul 8");
-        System.out.println(op.sumandAverge(69));
+        System.out.println(op.forLoopSumAndAverge(69));
         System.out.println();
 
         System.out.println("Exercitiul 9");
-        op.design();
+        op.forLoopDesign();
         System.out.println();
+
+        //Tema Lab12: while loop
+        System.out.println("Tema Lab12: Java While Loops");
+
+        System.out.println("Exercitiul 1");
+        op.whileLoopFromNrto100(97);
+        System.out.println();
+
+        System.out.println("Exercitiul 2");
+        op.whileLoopFromNrtoNeg100(-97);
+        System.out.println();
+
+        System.out.println("Exercitiul 3");
+        op.whileLoopNrBetweenXandY(6, 9);
+        System.out.println();
+
+        System.out.println("Exercitiul 4");
+        op.whileLoopNrFromXtoY(8, 6);
+        System.out.println();
+
+        System.out.println("Exercitiul 5");
+        op.whileLoopEvenNrFrom1to100(1);
+        System.out.println();
+
+        System.out.println("Exercitiul 6");
+        op.whileLoopNotEvenNrFrom1to100(1);
+        System.out.println();
+
+        System.out.println("Exercitiul 7");
+        System.out.println(op.whileLoopSumAndAverge(111));
+        System.out.println();
+
+
+
+
+
+
 
 
 

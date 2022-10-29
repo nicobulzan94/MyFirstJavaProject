@@ -120,28 +120,28 @@ public class LogicalOp {
 
     // Tema Lab12: for loops
     // Metoda pt ex 1
-    public void fromNrto100 (int nr){
+    public void forLoopFromNrto100 (int nr){
         for(int i = nr; i <= 100; i++){
             System.out.println(i);
         }
     }
 
     // Metoda pt ex 2
-    public void fromNrtoNegative100 (int negnr) {
+    public void forLoopFromNrtoNegative100 (int negnr) {
         for(int i = negnr; i >= -100; i--){
             System.out.println(i);
         }
     }
 
     // Metoda pt ex 3
-    public void nrBetweenXandY(int x, int y){
+    public void forLoopNrBetweenXandY(int x, int y){
         for (int i = x; i < y; i++){
             System.out.println(i);
             }
         }
 
     // Metoda pt ex 4
-    public void nrFromXtoY(int x, int y){
+    public void forLoopNrFromXtoY(int x, int y){
         if(x < y){
             for(int i = x; i < y; i++){
                 System.out.println(i);
@@ -154,8 +154,8 @@ public class LogicalOp {
 
     }
     // Metoda pt ex 5
-    public void evenNrFrom1to100(int number){
-        for(int i = 1; i<= number; i++){
+    public void forLoopEvenNrFrom1to100(){
+        for(int i = 1; i<= 100; i++){
             if(i % 2 == 0){
                 System.out.println(i);
             }
@@ -163,8 +163,8 @@ public class LogicalOp {
     }
 
     // Metoda pt ex 6
-    public void notEvenNrFrom1to100(int number){
-        for(int i = 1; i<= number; i++){
+    public void forLoopNotEvenNrFrom1to100(){
+        for(int i = 1; i<= 100; i++){
             if(i % 2 != 0){
                 System.out.println(i);
             }
@@ -172,38 +172,111 @@ public class LogicalOp {
     }
 
     // Metoda pt ex 7
-    public int sumUntil100(int nr){
+    public int forLoopSumUntil100(int nr){
         int sum = 0;
-        for(int i = 0; i <= 100; i++){
-            sum = nr + i;//sau sum += i;
+        for(int i = nr; i <= 100; i++){
+            sum = sum + i;//sau sum += i;
         }
         return sum;
 
     }
 
     // Metoda pt ex 8
-    public float sumandAverge(int nr){
+    public float forLoopSumAndAverge(int nr){
         int sum = 0;
-        for(int i = 0; i <= 100; i++){
-            sum = nr + i;
+        int howmanynr = 100 - nr;
+        for(int i = nr; i <= 100; i++){
+            sum = sum + i;
 
         }
-        return sum/100f;
+        return sum/howmanynr;
     }
 
     // Metoda pt ex 9
-    public void design() {
+    public void forLoopDesign() {
         for (int i = 1; i <= 7; i++) {
             for (int j = 7; j >= 1; j--) {
                 if (j >= i) {
                     System.out.print("*");
-                } else {
-                    System.out.print(" ");
                 }
             }
             System.out.println();
         }
     }
+
+    // Tema Lab12: while loops
+    // Metoda pt ex 1
+    public void whileLoopFromNrto100(int nr) {
+        while(nr <= 100){
+            System.out.println(nr);
+            nr++;
+        }
+    }
+
+    // Metoda pt ex 2
+    public void whileLoopFromNrtoNeg100(int negnr){
+        while(negnr >= -100){
+            System.out.println(negnr);
+            negnr--;
+        }
+    }
+
+    // Metoda pt ex 3
+    public void whileLoopNrBetweenXandY(int x, int y){
+        while(x <= y){
+            System.out.println(x);
+            x++;
+
+        }
+    }
+
+    // Metoda pt ex 4
+    public void whileLoopNrFromXtoY(int x, int y){
+        if(x < y){
+            while(x <= y){
+                System.out.println(x);
+                x++;
+            }
+
+        } else {
+            while(y <= x){
+                System.out.println(y);
+                y++;
+            }
+        }
+    }
+
+    // Metoda pt ex 5
+    public void whileLoopEvenNrFrom1to100(int number){
+        while(number <= 100){
+            if(number % 2 == 0){
+                System.out.println(number);
+            }
+            number++;
+        }
+    }
+
+    // Metoda pt ex 6
+    public void whileLoopNotEvenNrFrom1to100(int number){
+        while(number <= 100){
+            if(number % 2 != 0){
+                System.out.println(number);
+            }
+            number++;
+        }
+    }
+
+    // Metoda pt ex 7
+    public float whileLoopSumAndAverge(int nr){
+        int sum = 0;
+        while(sum <= 8899){
+            sum = nr + sum;
+            nr++;
+
+        }
+        return sum/8899f;//de unde stiu cate numere sunt?
+    }
+
 
 
 
