@@ -230,8 +230,13 @@ public class Main {
         System.out.println();
 
         System.out.println("Exercitiul 7");
-        System.out.println(op.whileLoopSumAndAverge(111));
+        op.whileLoopSumAndAverge();
         System.out.println();
+
+        System.out.println("Exercitiul 8");
+        System.out.println(op.whileLoopNrdiv7(0, 14));
+        System.out.println();
+
 
 
 

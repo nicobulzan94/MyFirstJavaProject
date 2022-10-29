@@ -253,6 +253,7 @@ public class LogicalOp {
                 System.out.println(number);
             }
             number++;
+
         }
     }
 
@@ -267,15 +268,37 @@ public class LogicalOp {
     }
 
     // Metoda pt ex 7
-    public float whileLoopSumAndAverge(int nr){
+    public void whileLoopSumAndAverge(){
+        int x = 111;
+        int y = 8899;
         int sum = 0;
-        while(sum <= 8899){
-            sum = nr + sum;
-            nr++;
-
+        int count = 0;
+        while(x <= y){
+            sum = sum +x;
+            x++;
+            count++;
         }
-        return sum/8899f;//de unde stiu cate numere sunt?
+
+        System.out.println(sum/count);
     }
+
+    // Metoda pt ex 8
+    public float whileLoopNrdiv7(int x, int y){
+        int sum = 0;
+        int count = 0;
+
+        while(x <= y) {
+            if (x % 7 == 0) {
+                sum = sum + x;
+                count++;
+                System.out.println(x + " e nr divizibil cu 7");
+            }
+            x++;
+        }
+        System.out.println("Sunt " + count + " nr divizibile cu 7");
+        return sum/count;
+    }
+
 
 
 
