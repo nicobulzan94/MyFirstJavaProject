@@ -1,8 +1,8 @@
 package AnimalRescue;
 
 public class Adopter {
-    String adopterName = "Nico";
-    int money = 1500;//valuta LEI
+    private String adopterName;
+    private int money;
 
     public void hugPet() {
         System.out.println("hugging...");
@@ -16,5 +16,34 @@ public class Adopter {
     public void playFetchWithDog() {
         System.out.println("throw the toy...vrrrr");
     }
+
+
+
+    //Tema Lab12: encapsulation
+    public void setAdopterName(String adopterName){
+        this.adopterName = adopterName;
+
+    }
+    public String getAdopterName(){
+        return adopterName;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+    public int getMoney() {
+        return money;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
