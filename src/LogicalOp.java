@@ -299,6 +299,56 @@ public class LogicalOp {
         return sum/count;
     }
 
+    // Metoda pt ex 9
+    public void whileLoopFibonacci() {
+        int x = 2;
+        int nra1 = 1;
+        int nra2 = 0;
+
+        System.out.println(nra2);
+        System.out.println(nra1);
+
+        while (x < 20) {
+            int actualnr = nra1 + nra2;
+            nra2 = nra1;
+            nra1 = actualnr;
+            x++;
+            System.out.println(actualnr);
+
+        }
+    }
+
+        // Metoda pt ex 10
+        public void CozaLozaWoza() {
+            int i = 1;
+
+            while (i <= 110) {
+                boolean test = false;
+                if (i % 3 == 0) {
+                    System.out.print("coza");
+                    test = true;
+                }
+                if (i % 5 == 0) {
+                    System.out.print("loza");
+                    test = true;
+                }
+                if (i % 7 == 0) {
+                    System.out.print("woza");
+                    test = true;
+                }
+                if (!test) {
+                    System.out.print(i);
+                }
+                System.out.print(" ");
+                if (i % 11 == 0) {
+                    System.out.println();
+                }
+                i++;
+            }
+
+
+        }
+
 
 
 

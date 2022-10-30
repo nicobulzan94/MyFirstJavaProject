@@ -237,6 +237,15 @@ public class Main {
         System.out.println(op.whileLoopNrdiv7(0, 14));
         System.out.println();
 
+        System.out.println("Exercitiul 9");
+        op.whileLoopFibonacci();
+        System.out.println();
+
+        System.out.println("Exercitiul 10");
+        op.CozaLozaWoza();
+        System.out.println();
+
+
 
 
 
