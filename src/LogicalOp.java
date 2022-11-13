@@ -350,6 +350,96 @@ public class LogicalOp {
         }
 
 
+    // Tema Lab13: Java Arrays
+    // Metoda pt ex 2
+    public int[] arrayfrom1to100(int positions){
+        int[] x = new int[positions];
+        for (int i = 0; i < x.length; i++){
+            x[i] = i + 1;
+        }
+        return x;
+    }
+    public void printArray(int[] y) {
+        for(int i = 0; i < y.length; i++){
+        System.out.println("Element at index " + i + " : " + y[i]);
+        }
+    }
+
+    // Metoda pt ex 3
+    public int[] arrayOfEvenNr1to100(int[] myEvenArray){
+        for (int i = 0; i < 100; i++){
+            if(i % 2 == 0){
+                myEvenArray[i] = i;
+            }
+        }
+        return myEvenArray;
+    }
+    public void printEvenArray(int[] z) {
+        for(int i = 0; i < z.length; i++) {
+            if(i % 2 == 0){
+                System.out.print(z[i] + " ");
+            }
+        }
+    }
+
+    // Metoda pt ex 4
+    public int arraySumandAverage(int[] a) {
+        int sum = 0;
+        for(int i = 0; i < a.length; i++){
+            sum = sum + a[i];
+        }
+        return sum/a.length;
+    }
+
+    // Metoda pt ex 5
+    public boolean stringArrayTF(String[] a, String b){
+        boolean val = false;
+        for(int i = 0; i < a.length; i++){
+            if(b == a[i]){
+                val = true;
+            }
+        }
+        return val;
+    }
+
+    // Metoda pt ex 6
+    public int arrayReturnPosition(int[] a, int b){
+        int position = -1;
+        for(int i = 0; i < a.length; i++) {
+            if(b == a[i]){
+                position = i;
+            }
+        }
+        return position;
+    }
+    public void printReturnArrayPosition(int z){
+        if(z == -1){
+            System.out.println("Numarul NU se afla in array.");
+        }else{
+            System.out.println("Numarul se afla in array pe pozitia " + z);
+        }
+    }
+
+    // Metoda pt ex 7
+    public void designGrila(String[] a){
+        for(int i = 0; i <= 10; i++){
+            for(int j = 0; j < a.length; j++){
+                System.out.print(a[j]);
+            }
+            System.out.println();
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -246,6 +246,58 @@ public class Main {
         System.out.println();
 
 
+        //Tema Lab13: Java Arrays
+        System.out.println("Tema Lab13: Java Arrays");
+
+        System.out.println("Exercitiul 2");
+        int[] myArray = op.arrayfrom1to100(100);
+        op.printArray(myArray);
+        System.out.println();
+
+        System.out.println("Exercitiul 3");
+        int[] x = new int[100];
+        int[] arrayEven = op.arrayOfEvenNr1to100(x);
+        op.printEvenArray(arrayEven);
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Exercitiul 4");
+        int[] arrayWithValues = {71, 22};
+        int arraySumAvg = op.arraySumandAverage(arrayWithValues);
+        System.out.println(arraySumAvg);
+        System.out.println();
+
+        System.out.println("Exercitiul 5");
+        String socialPlatform = "Facebook";
+        String[] socialMedia = {"Instagram", "Facebook", "Telegram", "What's Up"};
+        boolean compareString = op.stringArrayTF(socialMedia,socialPlatform);
+        System.out.println(compareString);
+        System.out.println();
+
+        System.out.println("Exercitiul 6");
+        int nrx = 8;
+        int[] nrsArray = {2, 4, 6, 8, 10};
+        int showPositioninArray = op.arrayReturnPosition(nrsArray, nrx);
+        op.printReturnArrayPosition(showPositioninArray);
+        System.out.println();
+
+        System.out.println("Exercitiul 7");
+        String[] arrayofLines = {"-", "-", "-", "-", "-", "-", "-", "-", "-", "-",};
+        op.designGrila(arrayofLines);
+        System.out.println();
+
+        System.out.println("Exercitiul 8");
+
+
+
+
+
+
+
+
+
+
+
 
 
 
