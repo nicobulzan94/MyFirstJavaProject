@@ -1,6 +1,9 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -286,7 +289,71 @@ public class Main {
         op.designGrila(arrayofLines);
         System.out.println();
 
+
+        //Tema Lab14: Java Arrays
+        System.out.println("Tema Lab13: Java Lists");
+
+        System.out.println("Exercitiul 1");
+        List<String> listEx1 = new ArrayList<>();
+        listEx1.add("Nico");
+        listEx1.add("Marius");
+        listEx1.add("DenisaP");
+        op.printList(listEx1);
+        System.out.println();
+
+        System.out.println("Exercitiul 2");
+        List<Integer> listEx2 = new ArrayList<>();
+        listEx2.add(34);
+        listEx2.add(6);
+        listEx2.add(91);
+        listEx2.add(13);
+        op.listOfNr(listEx2, 22);
+        System.out.println();
+
+        System.out.println("Exercitiul 3");
+        listEx2.add(99);
+        listEx2.add(87);
+        listEx2.add(58);
+        //exemplu care merge cu succes
+        op.listStartFromNr(listEx2, 3);
+        //exemplu cu eroare
+        op.listStartFromNr(listEx2, 10);
+        System.out.println();
+
+        System.out.println("Exercitiul 4");
+        op.printListBackwards(listEx1);
+        System.out.println();
+
+        System.out.println("Exercitiul 5");
+        op.complexListof3(listEx1, 1, "Damaris");
+        System.out.println();
+
+        System.out.println("Exercitiul 6");
+        List<String> listEx6 = new ArrayList<>();
+        listEx6.add("NewYorker");
+        listEx6.add("Berska");
+        listEx6.add("Zara");
+        op.insertElemInList(listEx6, "Stradivarius");
+        System.out.println();
+
+        System.out.println("Exercitiul 7");
+        op.printElemandPosition(listEx2);
+        System.out.println();
+
         System.out.println("Exercitiul 8");
+        List<Integer> myList = new ArrayList<>();
+        myList.add(2);
+        myList.add(10);
+        myList.add(30);
+        int maxValue = op.listBiggestNr(myList);
+        System.out.println("The biggest number is " + maxValue);
+
+
+
+
+
+
+
 
 
 

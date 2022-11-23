@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOp {
 
     // Tema Lab11: if / else
@@ -430,6 +433,77 @@ public class LogicalOp {
         }
 
     }
+
+    //Tema Lab14: Java lists
+    // Metoda pt ex 1
+    public void printList(List<String> myList){
+        for(int i = 0; i < myList.size(); i++ ){
+            System.out.println(myList.get(i));
+        }
+    }
+
+    // Metoda pt ex 2
+    public void listOfNr(List<Integer> nrs, int x) {
+        nrs.add(x);
+        System.out.println(nrs);
+    }
+
+    // Metoda pt ex 3
+    public void listStartFromNr(List<Integer> nrs, int x) {
+        if(x > nrs.size()) {
+            System.out.println("Indexul dat este in afara listei.");
+        }else {
+            for (int i = x; i < nrs.size(); i++) {
+                System.out.println(nrs.get(i));
+            }
+        }
+    }
+
+    // Metoda pt ex 4
+    public void printListBackwards(List<String> myList) {
+        System.out.println("Lista initiala era: " + myList);
+        for(int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
+        }
+    }
+
+    // Metoda pt ex 5
+    public void complexListof3(List<String> myList, int x, String name ) {
+        if(x > myList.size()){
+            System.out.println("Indexul e in afara listei");
+        }else {
+            myList.add(x, name);
+            System.out.println(myList);
+        }
+    }
+
+    // Metoda pt ex 6
+    public void insertElemInList(List<String> myList, String name) {
+        myList.add(0, name);
+        System.out.println(myList);
+    }
+
+    // Metoda pt ex 7
+    public void printElemandPosition(List<Integer> myList) {
+        for(int i = 0; i < myList.size(); i++) {
+            System.out.println("Pe pozitia " + i + " valoare este " + myList.get(i));
+        }
+
+    }
+
+    // Metoda pt ex 8
+    public int listBiggestNr(List<Integer> myList) {
+        int biggestNr = myList.get(0);
+        for (int i = 0; i < myList.size(); i++) {
+            if(myList.get(i) > biggestNr) {
+                biggestNr = myList.get(i);
+            }
+        }
+        return biggestNr;
+    }
+
+
+
 
 
 
