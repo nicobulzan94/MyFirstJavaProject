@@ -13,7 +13,19 @@ public class Animal {
         System.out.println("animal sounds..");
     }
     public void sleep() {
-        System.out.println("ZZzzZZZzzzz");
+        System.out.println("sleeping...");
+    }
+    public void eat() {
+        System.out.println("eating...");
+    }
+    public void run() {
+        System.out.println("running...");
+    }
+    public void seekAffection() {
+        System.out.println("cuddling...");
+    }
+    public void searchingForFood() {
+        System.out.println("searching around for food...");
     }
 
 

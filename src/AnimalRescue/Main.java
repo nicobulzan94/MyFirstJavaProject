@@ -9,6 +9,7 @@ public class Main {
         Veterinarian vet = new Veterinarian();
         VetFood vetFood = new VetFood();
         DogFood dogFood = new DogFood();
+        Cat cat = new Cat();
 
         adopter.setAdopterName("Nico");
         adopter.setMoney(1500);
@@ -21,6 +22,7 @@ public class Main {
         vet.setVetName("Dr Mike");
         vet.setVetSpecialization("Family Pet Dr");
         dogFood.setFoodName("Pedigree");
+        cat.setCatName("Fifi");
 
 
 

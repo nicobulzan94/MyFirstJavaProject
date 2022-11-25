@@ -9,6 +9,30 @@ public class DogPet extends Animal{
         System.out.println("fetching the toy...");
     }
 
+    @Override
+    public void eat() {
+        System.out.println("Chew chew chew");
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("Woof woof");
+    }
+
+    @Override
+    public void seekAffection() {
+        System.out.println("licking the face of the human");
+    }
+
+    @Override
+    public void searchingForFood() {
+        System.out.println("sniffing for food...");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("SnnnooOOOrrriinnGGG...");
+    }
 
     //Tema Lab12: encapsulation
     //private String dogName
