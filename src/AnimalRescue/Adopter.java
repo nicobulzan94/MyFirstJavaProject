@@ -1,12 +1,10 @@
 package AnimalRescue;
 
-public class Adopter {
+public class Adopter extends Human{
     private String adopterName;
     private int money;
 
-    public void hugPet() {
-        System.out.println("hugging...");
-    }
+
     public void giveTreat() {
         System.out.println("feeding pet...");
     }
@@ -36,14 +34,13 @@ public class Adopter {
     }
 
 
+    @Override
+    public void hugPet() {
+        System.out.println("hugging the pet while showering it with kisses.");
+    }
 
-
-
-
-
-
-
-
-
-
+    @Override
+    public void caressPet() {
+        System.out.println("stroking lovingly the pet...");
+    }
 }

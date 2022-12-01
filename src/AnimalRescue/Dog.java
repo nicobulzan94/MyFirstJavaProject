@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class DogPet extends Animal{
+public class Dog extends Animal{
 
     private String dogName;
 
@@ -15,6 +15,11 @@ public class DogPet extends Animal{
     }
 
     @Override
+    public void run() {
+        System.out.println("dog is trotting...");
+    }
+
+    @Override
     public void speak() {
         System.out.println("Woof woof");
     }
@@ -26,7 +31,7 @@ public class DogPet extends Animal{
 
     @Override
     public void searchingForFood() {
-        System.out.println("sniffing for food...");
+        System.out.println("sniffing around for food...");
     }
 
     @Override

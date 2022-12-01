@@ -12,6 +12,11 @@ public class Cat extends Animal{
     }
 
     @Override
+    public void searchingForFood() {
+        System.out.println("the cat moves its whiskers...");
+    }
+
+    @Override
     public void sleep() {
         System.out.println("ZZZzzzzZZZzzzz");
     }
@@ -20,6 +25,12 @@ public class Cat extends Animal{
     public void eat() {
         System.out.println("Yum yum yum");
     }
+
+    @Override
+    public void run() {
+        System.out.println("running with quick paws...");
+    }
+
     public void play() {
         System.out.println("scratching the cat toy...");
     }

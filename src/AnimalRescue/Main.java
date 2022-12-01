@@ -4,10 +4,10 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        DogPet dog = new DogPet();
+        Dog dog = new Dog();
         Adopter adopter = new Adopter();
         Veterinarian vet = new Veterinarian();
-        VetFood vetFood = new VetFood();
+        PetFood petFood = new PetFood();
         DogFood dogFood = new DogFood();
         Cat cat = new Cat();
 

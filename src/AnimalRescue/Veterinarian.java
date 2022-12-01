@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Veterinarian {
+public class Veterinarian extends Human{
     private String vetName;
     private String vetSpecialization;
 
@@ -29,24 +29,15 @@ public class Veterinarian {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public void hugPet() {
+        System.out.println("The doctor hugs the animal and pats it on the head");
     }
+
+    @Override
+    public void caressPet() {
+        System.out.println("The doctor is touching the pet gently...");
+    }
+}
 
 

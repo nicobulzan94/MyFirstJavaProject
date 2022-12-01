@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private int age;
     private String breed;
     private int hungerLevel;
@@ -9,24 +9,12 @@ public class Animal {
     private String favActivity;
 
 
-    public void speak() {
-        System.out.println("animal sounds..");
-    }
-    public void sleep() {
-        System.out.println("sleeping...");
-    }
-    public void eat() {
-        System.out.println("eating...");
-    }
-    public void run() {
-        System.out.println("running...");
-    }
-    public void seekAffection() {
-        System.out.println("cuddling...");
-    }
-    public void searchingForFood() {
-        System.out.println("searching around for food...");
-    }
+    public abstract void speak();
+    public abstract void sleep();
+    public abstract void eat();
+    public abstract void run();
+    public abstract void seekAffection();
+    public abstract void searchingForFood();
 
 
     //Tema Lab12: encapsulation

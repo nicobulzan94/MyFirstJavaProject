@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class VetFood {
+public class PetFood {
     private String foodName;
     private String foodType;
     private int foodPrice;//RON pe 5kg
