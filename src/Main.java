@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
      /*
      System.out.println("Tema lab9");
@@ -290,8 +290,8 @@ public class Main {
         System.out.println();
 
 
-        //Tema Lab14: Java Arrays
-        System.out.println("Tema Lab13: Java Lists");
+        //Tema Lab14: Java Lists
+        System.out.println("Tema Lab14: Java Lists");
 
         System.out.println("Exercitiul 1");
         List<String> listEx1 = new ArrayList<>();
@@ -347,6 +347,43 @@ public class Main {
         myList.add(30);
         int maxValue = op.listBiggestNr(myList);
         System.out.println("The biggest number is " + maxValue);
+        System.out.println();
+
+
+        //Tema Lab15: Java Error Handling
+        System.out.println("Tema Lab15: Java Error Handling");
+        Read read = new Read();
+
+        System.out.println("Exercitiul 1");
+        System.out.println("Numarul introdus este: " + read.keyboardInt());
+        System.out.println();
+
+        System.out.println("Exercitiul 2");
+        System.out.println("Numarul introdus este: " + read.keyboardDouble());
+        System.out.println();
+        System.out.println("Textul introdus este: " + read.keyboardText());
+        System.out.println();
+
+        System.out.println("Exercitiul 3");
+        int[] constructArray = read.constructArray(4);
+        read.printConstructArray(constructArray);
+        System.out.println();
+
+        System.out.println("Exercitiul 4");
+        List<Integer> ex4List = read.constructList();
+        read.printConstructList(ex4List);
+        System.out.println();
+
+        System.out.println("Exercitiul 5");
+        int[] myArrayofInt = {23, 67, 34, 89};
+        op.tryCatch(myArrayofInt, 2);
+        System.out.println();
+
+        System.out.println("Exercitiul 6");
+        op.wait(8);
+
+
+
 
 
 

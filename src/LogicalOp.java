@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class LogicalOp {
 
@@ -500,6 +501,23 @@ public class LogicalOp {
             }
         }
         return biggestNr;
+    }
+
+    //Tema 15: Error Handling
+    //Exercitiul 5
+    public void tryCatch(int[] z, int x) {
+        Scanner scan = new Scanner(System.in);
+        try {
+            System.out.println("Elementul de pe pozitia "  + x + " este: " + z[x]);
+        }catch(ArrayIndexOutOfBoundsException abc) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
+    //Exercitiul 5
+    public void wait(int x) throws InterruptedException {
+        System.out.println("Wait ["+x+"] seconds.");
+        Thread.sleep(x*1000);
+        System.out.println("Waiting finished.");
     }
 
 
