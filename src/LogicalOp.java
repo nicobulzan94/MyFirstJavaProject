@@ -513,7 +513,7 @@ public class LogicalOp {
             System.out.println("Inside catch, number too large");
         }
     }
-    //Exercitiul 5
+    //Exercitiul 6
     public void wait(int x) throws InterruptedException {
         System.out.println("Wait ["+x+"] seconds.");
         Thread.sleep(x*1000);
